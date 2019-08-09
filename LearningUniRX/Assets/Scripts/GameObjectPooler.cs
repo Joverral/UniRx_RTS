@@ -1,5 +1,5 @@
 ﻿//This is a heavy modification of the original code found here: http://forum.unity3d.com/threads/simple-reusable-object-pool-help-limit-your-instantiations.76851/
-
+// Might be outdated, need to check if Unity does object pooling on it's own.
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;

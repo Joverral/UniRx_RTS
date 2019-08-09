@@ -31,10 +31,7 @@ public class Turret : MonoBehaviour {
                 {
                     if (target != null)
                     {
-                        //this.horizontalComponent.transform.LookAt(target.transform);
-
                         RotateTowardsHorizontal(target.transform.position);
-                        //RotateTowardsVertical(target.transform.position);
                     }
                 });
             }
@@ -42,8 +39,6 @@ public class Turret : MonoBehaviour {
         // might be better to do it via coroutine here
         
     }
-
- 
 
     private IObservable<GameObject> EveryUpdateTarget()
     {
@@ -62,14 +57,4 @@ public class Turret : MonoBehaviour {
         Quaternion desiredRotation = Quaternion.LookRotation(horzPoint - new Vector3(horzTrans.position.x, 0, horzTrans.position.z));
         horzTrans.rotation = Quaternion.Lerp(horzTrans.rotation, desiredRotation, Time.deltaTime * 10);
     }
-    //IEnumerator RotateHorizontal(GameObject target)
-    //{
-    //    while (target != null)
-    //    {
-    //        this.horizontalComponent.transform.LookAt(target.transform);
-    //        yield return null;
-    //    }
-    //}
-
-    //MainThreadDispatcher.StartUpdateMicroCoroutine(RotateHorizontal());
 }
