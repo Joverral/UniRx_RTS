@@ -70,13 +70,6 @@ public class PlayerController : MonoBehaviour
         //selectedObject.Where(c => c != null && c.GetComponent<DamageManager>()).Select(c => c.GetComponent<DamageManager>()).Select(dm => dm.HitPointStream).SubscribeToText(selectedUnitHealthText, hp => "Health: " + hp);
 
         _selectedObject.Subscribe(c => SubscribeToSelectedObjectComponents(c));
-
-        //{
-          
-        //    //damManager.HitPointStream.Subscribe(hps => selectedUnitHealthText.text = "Health: " + hps.ToString()).AddTo(selectedObjectPropertySubs);
-        //});
-
-        // I think I want a mouseover gameobject? 
     }
 
     void SubscribeToSelectedObjectComponents(Controllable selectedObject)

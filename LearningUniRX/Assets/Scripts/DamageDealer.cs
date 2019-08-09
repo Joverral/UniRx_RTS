@@ -8,15 +8,4 @@ public class DamageDealer : MonoBehaviour {
 
     [SerializeField]
     int damage;
-
-    // TODO: Split into Damage and penetration?
-
-    // any other special properties go here?
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	
 }
