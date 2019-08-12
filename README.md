@@ -1,4 +1,2 @@
 # UniRx_RTS
-Learning UniRx by making a really simple RTS prototype.
-
-This really should move to using scriptable objects.
+Learning UniRx by making a really simple RTS prototype.  The tank controllers are observable streams that take commands, and listen for various commands to respond to.  Though basically only did movement and firing.  There's more in there for armor and facing, simplified compared to the other tanklords game.  I think I disabled the hit point tracking for some testing, and probably should've put it back in before I forgot =)
