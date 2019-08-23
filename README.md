@@ -2,7 +2,7 @@
 Learning UniRx by making a really simple RTS prototype.  The tank controllers are observable streams that take commands, and listen for various commands to respond to.  Though basically only did movement and firing.  There's more in there for armor and facing, simplified compared to the other tanklords game.  I think I disabled the hit point tracking for some testing, and probably should've put it back in before I forgot =)
 
 
-I came across UniRX as a possible solution to the doldrums of writing event systems and doing SendMessage all over the place, and then decided to learn it by just starting a game from scratch with it.  And using it everywhere, even if it might not be the best fit, just to see what it could do.  What's UniRX?  Well here's a small presentation, and here's a link to the github.
+I came across UniRX as a possible solution to the doldrums of writing event systems and doing SendMessage all over the place, and then decided to learn it by just starting a game from scratch with it.  And using it everywhere, even if it might not be the best fit, just to see what it could do.  What's UniRX?  Well here's a small presentation, and here's a [link](https://github.com/neuecc/UniRx) to the github.
 
 So, the game?  A simple RTS, a much simpler version of that turn based tank game that's forever on the back burner.  So the short version Mech Commander, with Tanks instead of Mechs.
 
